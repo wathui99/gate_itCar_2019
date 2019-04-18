@@ -1,0 +1,9 @@
+C:\Users\Dung\Desktop\Gates_ITCAR\C#\Clock_Timer\Clock_Timer\bin\Debug\Clock_Timer.exe.config
+C:\Users\Dung\Desktop\Gates_ITCAR\C#\Clock_Timer\Clock_Timer\bin\Debug\Clock_Timer.exe
+C:\Users\Dung\Desktop\Gates_ITCAR\C#\Clock_Timer\Clock_Timer\bin\Debug\Clock_Timer.pdb
+C:\Users\Dung\Desktop\Gates_ITCAR\C#\Clock_Timer\Clock_Timer\obj\Debug\Clock_Timer.csprojResolveAssemblyReference.cache
+C:\Users\Dung\Desktop\Gates_ITCAR\C#\Clock_Timer\Clock_Timer\obj\Debug\Clock_Timer.Clock.resources
+C:\Users\Dung\Desktop\Gates_ITCAR\C#\Clock_Timer\Clock_Timer\obj\Debug\Clock_Timer.Properties.Resources.resources
+C:\Users\Dung\Desktop\Gates_ITCAR\C#\Clock_Timer\Clock_Timer\obj\Debug\Clock_Timer.csproj.GenerateResource.Cache
+C:\Users\Dung\Desktop\Gates_ITCAR\C#\Clock_Timer\Clock_Timer\obj\Debug\Clock_Timer.exe
+C:\Users\Dung\Desktop\Gates_ITCAR\C#\Clock_Timer\Clock_Timer\obj\Debug\Clock_Timer.pdb

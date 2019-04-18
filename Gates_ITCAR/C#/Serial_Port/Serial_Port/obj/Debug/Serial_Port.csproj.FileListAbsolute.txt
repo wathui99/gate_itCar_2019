@@ -1,0 +1,9 @@
+C:\Users\Dung\Desktop\Gates_ITCAR\C#\Serial_Port\Serial_Port\bin\Debug\Serial_Port.exe.config
+C:\Users\Dung\Desktop\Gates_ITCAR\C#\Serial_Port\Serial_Port\bin\Debug\Serial_Port.exe
+C:\Users\Dung\Desktop\Gates_ITCAR\C#\Serial_Port\Serial_Port\bin\Debug\Serial_Port.pdb
+C:\Users\Dung\Desktop\Gates_ITCAR\C#\Serial_Port\Serial_Port\obj\Debug\Serial_Port.Clock.resources
+C:\Users\Dung\Desktop\Gates_ITCAR\C#\Serial_Port\Serial_Port\obj\Debug\Serial_Port.Properties.Resources.resources
+C:\Users\Dung\Desktop\Gates_ITCAR\C#\Serial_Port\Serial_Port\obj\Debug\Serial_Port.csproj.GenerateResource.Cache
+C:\Users\Dung\Desktop\Gates_ITCAR\C#\Serial_Port\Serial_Port\obj\Debug\Serial_Port.exe
+C:\Users\Dung\Desktop\Gates_ITCAR\C#\Serial_Port\Serial_Port\obj\Debug\Serial_Port.pdb
+C:\Users\Dung\Desktop\Gates_ITCAR\C#\Serial_Port\Serial_Port\obj\Debug\Serial_Port.csprojResolveAssemblyReference.cache
