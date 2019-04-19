@@ -219,6 +219,7 @@ namespace GATE_v1
             if (bntConnect.Text == "DISCONNECT")
             {
                 UART.Write("R");          // RESET
+                UART.Write("O");
                 if (bntMode.Text == "MODE 1")
                     UART.Write("2");
                 else if (bntMode.Text == "MODE 2")
@@ -291,6 +292,10 @@ namespace GATE_v1
                     CountDown.Stop();
                     Watch.Stop();
                     TimerWatch.Stop();
+                    min = TimerWatch.Elapsed.Minutes;
+                    sec = TimerWatch.Elapsed.Seconds;
+                    milisec = TimerWatch.Elapsed.Milliseconds;
+                    this.lbWatch1.Text = min.ToString("00") + ":" + sec.ToString("00") + "." + milisec.ToString("000");
                     System.IO.File.WriteAllText("result\\" + textBox_name_team_1.Text + ".txt", "Team " + textBox_name_team_1.Text + ":\nCheck point " + check_point.ToString() + ": " + min.ToString("00") + ":" + sec.ToString("00") + "." + milisec.ToString("000"));
                     UART.Write("F");
                 } catch { }
@@ -305,6 +310,10 @@ namespace GATE_v1
                 try
                 {
                     TimerWatch.Stop();
+                    min = TimerWatch.Elapsed.Minutes;
+                    sec = TimerWatch.Elapsed.Seconds;
+                    milisec = TimerWatch.Elapsed.Milliseconds;
+                    this.lbWatch2.Text = min.ToString("00") + ":" + sec.ToString("00") + "." + milisec.ToString("000");
                     System.IO.File.WriteAllText("result\\" + textBox_name_team_1.Text + ".txt", "Team " + textBox_name_team_1.Text + ":\nCheck point " + check_point.ToString() + ": " + min.ToString("00") + ":" + sec.ToString("00") + "." + milisec.ToString("000"));
                 }
                 catch { }
@@ -319,6 +328,9 @@ namespace GATE_v1
                 try
                 {
                     TimerWatch2.Stop();
+                    min = TimerWatch2.Elapsed.Minutes;
+                    sec = TimerWatch2.Elapsed.Seconds;
+                    milisec = TimerWatch2.Elapsed.Milliseconds;
                     System.IO.File.WriteAllText("result\\" + textBox_name_team_2.Text + ".txt", "Team " + textBox_name_team_2.Text + ":\nCheck point " + check_point2.ToString() + ": " + min.ToString("00") + ":" + sec.ToString("00") + "." + milisec.ToString("000"));
                 }
                 catch { }

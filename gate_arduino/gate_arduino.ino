@@ -21,9 +21,9 @@ SoftwareSerial mySerial(Rx, Tx); // RX, TX
 #define SV1 10
 #define SV2 9
 #define handle_open_1 5
-#define handle_open_2 50
+#define handle_open_2 160
 #define handle_close_1 115
-#define handle_close_2 70
+#define handle_close_2 55
 
 //------------pin lazer
 #define LAZER1 12
@@ -72,6 +72,8 @@ void setup()
   Serial.begin(9600);     // giao tiếp Serial với baudrate 9600
   mySerial.begin(9600);
   SERVO1.attach(SV1);
+  SERVO2.attach(SV2);
+  
   open_gate();
   //SERVO2.attach(SV2);
   pinMode(ALARM, OUTPUT);
@@ -91,6 +93,7 @@ void loop()
     runGate1();
   }
   else if (mode == 2 && gogo) {
+    runGate1();
     runGate2();
   }
   if (millis() - timeAlarm > 3000) {
@@ -101,10 +104,12 @@ void loop()
 void open_gate () {
   Serial.println("open gate");
   SERVO1.write(handle_open_1);
+  SERVO2.write(handle_open_2);
 }
 void close_gate () {
   Serial.println("close gate");
   SERVO1.write(handle_close_1);
+  SERVO2.write(handle_close_2);
 }
 void go_f () {
   Serial.println("go go go");
@@ -121,6 +126,7 @@ void reset_f () {
 }
 void ready_f () {
   Serial.println("ready");
+  close_gate();
 }
 uint8_t check_pass () {
   uint8_t ret = 0;
